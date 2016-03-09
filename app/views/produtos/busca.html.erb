@@ -1,0 +1,17 @@
+<table class='table table-bordered'>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+        </tr>
+    </thead>
+    <tbody>
+        #<%= render partial: "produto", collection: @produtos %>
+        #ou
+        <%= render @produtos %>
+    </tbody>
+</table>
+
+<%= link_to "Criar novo produto", new_produto_path %>
